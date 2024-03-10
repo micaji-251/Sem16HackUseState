@@ -1,0 +1,84 @@
+.Header {
+  background-image: url("../img/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 600px;
+  color: white;
+
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex--between {
+    justify-content: space-between;
+  }
+
+  .flex--around {
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  .navBar li {
+    color: white;
+  }
+
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  nav {
+    padding: 20px 0;
+    font-family: var(--main-font);
+  }
+
+  .NavBarlogo {
+    font-size: 1.8rem;
+  }
+
+  .NavBarList {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .NavBarList:hover,
+  .NavBarList:focus {
+    cursor: pointer;
+  }
+
+  .flex-column {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btnOrder {
+    background-color: var(--secondary-font-color);
+    width: 180px;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    font-family: var(--main-font);
+  }
+
+  .btnOrder:hover,
+  .btnOrder:focus {
+    background-color: #d49633;
+    cursor: pointer;
+  }
+
+  .headerMainTitle {
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    padding: 30px 0;
+    font-weight: 400;
+  }
+
+  .imgContainer {
+  }
+}

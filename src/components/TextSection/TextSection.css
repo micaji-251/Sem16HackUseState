@@ -1,0 +1,39 @@
+.TextSection {
+  height: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  margin: 30px 0;
+
+  .sectionTitle {
+    font-size: 2.5rem;
+    margin-top: 0;
+    font-family: var(--main-font);
+    letter-spacing: 3px;
+    color: var(--main-font-color-dark);
+    margin-bottom: 20px;
+  }
+  .sectionTitle span {
+    font-family: var(--headings-font);
+    color: var(--secondary-font-color);
+    font-size: 5rem;
+    display: block;
+    margin-bottom: 0;
+    line-height: 0.3;
+    padding-bottom: 0;
+    font-weight: 400;
+  }
+
+  .sectionSubtext {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .sectionLink {
+    color: var(--secondary-font-color);
+    border-bottom: 1px solid var(--secondary-font-color);
+    line-height: 1.5;
+    padding: 2px 0;
+  }
+}

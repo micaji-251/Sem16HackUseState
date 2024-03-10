@@ -1,0 +1,38 @@
+:root {
+  --main-font: "Source Sans Pro", sans-serif;
+  --secondary-font: "Poiret One", cursive;
+  --body-font: "Cabin", sans-serif;
+  --headings-font: "Herr Von Muellerhoff", cursive;
+  --main-font-color-dark: #252525;
+  --secondary-font-color: #e1b164;
+  --body-font-color: #515151;
+  --white-color: #fff;
+  --dark-bg: #121212;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+  }

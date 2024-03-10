@@ -1,0 +1,36 @@
+.Separator {
+  height: 400px;
+
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    height: 400px;
+  }
+
+  .sectionTitle {
+    font-family: var(--headings-font);
+    color: var(--secondary-font-color);
+    font-size: 5rem;
+    display: block;
+    margin-bottom: 0;
+    line-height: 0.3;
+    padding-bottom: 0;
+    font-weight: 400;
+  }
+
+  .sectionSubTitle {
+    font-size: 2.5rem;
+    margin-top: 0;
+    font-family: var(--main-font);
+    letter-spacing: 3px;
+    color: var(--main-font-color-dark);
+    margin-bottom: 20px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
