@@ -1,26 +1,21 @@
 import React from "react";
+import "./Footer.css";
+// import stars from "../img/estrellas.png";
+import { Reviews } from "./Reviews";
 
-export const ClientReview = ({reviews,review,setReviews}) => {
-
-    const deleteReview = (ItemDelete) => {
-        console.log(ItemDelete);
-      };
+export const ClientReview = ({ objectReviews, deleteReview }) => {
+  
 
   return (
-    <article className="clientReview" key={review.id}>
-      <div className="flex">
-        <img src={stars} alt="stars" className="stars" />
-        <button
-          className="btnX"
-          onClick={() => {
-            deleteReview(review.id);
-          }}
-        >
-          X
-        </button>
-      </div>
-      <p className="reviewText">{review.reviewText}</p>
-      <p className="reviewUser">{review.name}</p>
-    </article>
+    <div className="reviewsContainer grid-3">
+      {objectReviews &&
+        objectReviews.map((objectReview) => (
+          <Reviews
+            review={objectReview}
+            key={objectReview.id}
+            deleteReview={deleteReview}
+          />
+        ))}
+    </div>
   );
 };
