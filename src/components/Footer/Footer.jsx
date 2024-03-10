@@ -1,7 +1,6 @@
 import "./Footer.css";
 
 import { useState } from "react";
-import { ClientReview } from "./ClientReview";
 import stars from "../img/estrellas.png";
 
 let counter = 0;
@@ -45,6 +44,7 @@ export const Footer = () => {
             </div>
             <input type="submit" value={"SEND"} className="btnSubmit" />
           </form>
+
 
           <div className="reviewsContainer grid-3">
             {reviews &&
